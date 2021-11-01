@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 
 const AlbumDetail = () => {
-
   const { idAlbum } = useParams()
   const [album, setAlbums] = useState([])
 
@@ -12,10 +11,10 @@ const AlbumDetail = () => {
       .then((data) => setAlbums(data.album[0]))
   }, [idAlbum])
 
-  return(
+  return (
     <div>
-     <h2>{album.strAlbum}</h2>
-     <p>{album.strDescriptionEN}</p>
+      <h2>{album.strAlbum}</h2>
+      <p>{album.strDescriptionEN}</p>
     </div>
   )
 }

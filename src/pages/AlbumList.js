@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const AlbumList = () => {
-
   const [albums, setAlbums] = useState([])
 
   useEffect(() => {
@@ -19,7 +18,7 @@ export const AlbumList = () => {
         <div key={album.idAlbum}>
           <Link to={`/albums/${album.idAlbum}`}>
             <h2>{album.strAlbum}</h2>
-            <img src={`${album.strAlbumThumb}/preview`} alt= {`album cover ${album.strAlbum}` }/>
+            <img src={`${album.strAlbumThumb}/preview`} alt={`album cover ${album.strAlbum}`} />
           </Link>
         </div>
       ))}

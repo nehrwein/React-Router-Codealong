@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { AlbumList } from 'pages/AlbumList'
 import AlbumDetail from 'pages/AlbumDetail'
 
-
 export const App = () => {
   return (
     <BrowserRouter>
